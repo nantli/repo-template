@@ -13,7 +13,7 @@ labels:
           You 'nantli' 👨🏿‍🌾 get a vegan taco 🌮!
 
           /ghipy Have a taco!
-  - name: "locked: resolved 👩🏽‍🌾"
+  - name: "locked: resolved ✅"
     labeled:
       issue:
         body: |
