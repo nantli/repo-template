@@ -1,4 +1,4 @@
-name: Label Commenter 🏷
+name: Comment label change 🏷
 
 on:
   issues:
@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   comment:
+    name: Comment after label change 🏷
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
