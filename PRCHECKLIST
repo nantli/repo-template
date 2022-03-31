@@ -1,0 +1,31 @@
++task+ No local configuration (passwords, comments, debugging) has been committed 🔒
++task+ All tasks in linked issues have been addressed 👍🏾
+
+--files /src/** +title+ **Changes to src** ✨
+--files /src/** +task+ Bump version number up ⏫
+
+--target main +title+ **PR checklist** :checkered_flag:
+--target main +task+ README.md is up to date 📝
+--target main +comment+ All done? merge PR with squash option. /giphy break a leg!
+
+# Use instructions for 'Pull Request Checklist Buddy' app
+# Checklist Buddy by Mibex Software https://www.mibexsoftware.com/
+
+# To create a new task, use '+task+' followed by the task description.
+# To create a reminder (a non-blocking comment), use '+comment+' followed by the comment text
+# +task+ No local configuration (passwords, comments, debugging) has been committed 🔐.
+# +task+ All linked issues has been addressed 👍🏾.
+
+# To filter when a task is applied, prepend the task/comment/title with one or more of the following filters:
+# '--source' - the source branch
+# '--target' - the target/destination branch
+# '--files' - diff file pattern, similar to .gitignore
+
+# When more than one task has the same filter settings, these are grouped as a checklist.
+# Note: entries with the same filter settings will be grouped together, regardless of position in file
+
+# To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
+
+; --files /src/components/** +title+ **UI Changes** 👩🏾‍💻
+; --files /src/components/** +task+ UI changes visually inspected on Chrome,Safari and Firefox 💻.
+; --files /src/components/** +task+ Visually inspect mobile responsiveness 📱.
