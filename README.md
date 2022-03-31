@@ -20,4 +20,4 @@ Show love 🫶🏾 to animals 🐄 🐖 🦃 !
 
 ## License
 
-[MIT](LICENSE) Nantli
+[MIT](LICENSE) Nantli 2022
