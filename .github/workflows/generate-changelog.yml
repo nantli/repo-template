@@ -21,15 +21,6 @@ jobs:
           exclude_types: other,docs,chore,refactor,style,revert
           config_file: .github/tag-changelog-config.js
 
-      - name: Create release 🎉
-        uses: actions/create-release@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: ${{ steps.changelog.outputs.changes }}
-
       - name: Read CHANGELOG.md 👓
         id: package
         uses: juliangruber/read-file-action@v1
