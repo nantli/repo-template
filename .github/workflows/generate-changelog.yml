@@ -31,7 +31,7 @@ jobs:
         uses: DamianReeves/write-file-action@master
         with:
           path: ./CHANGELOG.md
-          contents: ${{ steps.changelog.outputs.changelog }}${{ steps.package.outputs.content }}
+          contents: ${{ steps.changelog.outputs.changelog }}
           write-mode: overwrite
 
       - name: Commit and push CHANGELOG.md ↗️
