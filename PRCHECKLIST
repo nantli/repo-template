@@ -26,6 +26,6 @@
 
 # To name a checklist, create a line entry with the desired filter settings and +title+ Your Checklist Title
 
-; --files /src/components/** +title+ **UI Changes** 👩🏾‍💻
-; --files /src/components/** +task+ UI changes visually inspected on Chrome,Safari and Firefox 💻.
-; --files /src/components/** +task+ Visually inspect mobile responsiveness 📱.
+# --files /src/components/** +title+ **UI Changes** 👩🏾‍💻
+# --files /src/components/** +task+ UI changes visually inspected on Chrome,Safari and Firefox 💻.
+# --files /src/components/** +task+ Visually inspect mobile responsiveness 📱.
