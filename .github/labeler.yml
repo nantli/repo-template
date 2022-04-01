@@ -72,7 +72,7 @@ labels:
     matcher:
       body: "(\\n|.)*/bug(\\n|.)*"
 
-  - label: "type: testing 🤖"
+  - label: "type: testing 🔎"
     sync: true
     matcher:
       body: "(\\n|.)*/test(\\n|.)*"
