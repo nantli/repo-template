@@ -16,6 +16,24 @@ labels:
     matcher:
       title: ".*chore: .*"
 
+  - label: "patch"
+    sync: true
+    matcher:
+      title: ".*#patch.*"
+      body: ".*#patch.*"
+
+  - label: "minor"
+    sync: true
+    matcher:
+      title: ".*#minor.*"
+      body: ".*#minor.*"
+
+  - label: "major"
+    sync: true
+    matcher:
+      title: ".*#major.*"
+      body: ".*#major.*"
+
   - label: "breaking"
     sync: true
     matcher:

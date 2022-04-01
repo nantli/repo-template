@@ -57,7 +57,9 @@ jobs:
       - name: Create Pull Request 🐙
         uses: peter-evans/create-pull-request@v4
         with:
-          commit-message: "docs: update CHANGELOG.md for release [skip ci]"
+          commit-message: |
+            chore: update CHANGELOG.md for release [skip ci]
+            #none version bump
           branch: automated-pr/update-changelog
           delete-branch: true
           base: main
@@ -65,6 +67,7 @@ jobs:
           title: "🐷 - chore: update CHANGELOG.md for new release [automated]"
           body: |
             Update CHANGELOG.md after new release 
+            #none version bump
             Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
           assignees: rolasotelo
           labels: automated 🤖,chore
