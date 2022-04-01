@@ -56,5 +56,5 @@ jobs:
       - uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: |
-            type: fix 🩹,type: security 🔒,type: documentation 📝,type: infrastructure 🧱,type: feature ✨,type: hotfix 🚑,type: bug 🐛,type: testing 🤖,type: dx 👩🏼‍💻,type: ci/cd 👷🏾,type: improvement ⚡️,
+            type: fix 🩹,type: security 🔒,type: documentation 📝,type: infrastructure 🧱,type: feature ✨,type: hotfix 🚑,type: bug 🐛,type: testing 🔎,type: dx 👩🏼‍💻,type: ci/cd 👷🏾,type: improvement ⚡️,
           repo_token: ${{ secrets.GITHUB_TOKEN }}
