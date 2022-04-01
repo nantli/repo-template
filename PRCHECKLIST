@@ -5,7 +5,7 @@
 
 --target main +title+ **Relevant branch checklist** 🚨
 --target main +task+ README.md is up to date 📝
---target main +comment+ All done? merge PR with squash option. /giphy break a leg!
+--target main +comment+ All done? merge PR with squash option (Do not forget to add a release tag: patch, minor, major or none). /giphy break a leg!
 
 # Use instructions for 'Pull Request Checklist Buddy' app
 # Checklist Buddy by Mibex Software https://www.mibexsoftware.com/
