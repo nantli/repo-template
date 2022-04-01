@@ -1,4 +1,6 @@
-# v0.3.0 - 2022-04-01
+# v0.4.1 - 2022-04-01
+## 🐛 Bugfixes
+- generate changelog after tagger action ([#29](https://github.com/nantli/repo-template/pull/29) by [rolasotelo](https://github.com/rolasotelo))# v0.3.0 - 2022-04-01
 ## ✨ New Features
 - run label checker as steps after multi-labeler
 - add tag action that triggers on merge to main
