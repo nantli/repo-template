@@ -27,12 +27,19 @@ jobs:
         with:
           path: ./CHANGELOG.md
 
-      - name: Write to CHANGELOG.md 📝
+      - name: Write to CHANGELOG.md new info 📝
         uses: DamianReeves/write-file-action@master
         with:
           path: ./CHANGELOG.md
           contents: ${{ steps.changelog.outputs.changelog }}
           write-mode: overwrite
+
+      - name: Write to CHANGELOG.md old info 📝
+        uses: DamianReeves/write-file-action@master
+        with:
+          path: ./CHANGELOG.md
+          contents: ${{ steps.package.outputs.content }}
+          write-mode: append
 
       - name: Create Pull Request 🐙
         uses: peter-evans/create-pull-request@v4
