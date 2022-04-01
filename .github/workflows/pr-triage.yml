@@ -17,7 +17,16 @@ jobs:
       - uses: fuxingloh/multi-labeler@v1
 
   check_semver_labels:
-    name: Check for semantic version labels 👮🏻‍♂️🏷
+    name: Check for semantic version labels 🚀
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://agilepathway/pull-request-label-checker:latest
+        with:
+          one_of: patch,minor,major
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+  check_conventional_labels:
+    name: Check for conventional Commits labels ✨ 🐛 🧰
     runs-on: ubuntu-latest
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:latest
@@ -37,7 +46,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   check_effort_labels:
-    name: Check for effort labels 👮🏻‍♂️🏷
+    name: Check for effort labels 💪🏼👨🏼‍💻
     runs-on: ubuntu-latest
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:latest
@@ -47,7 +56,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   check_work_labels:
-    name: Check for work labels 👮🏻‍♂️🏷
+    name: Check for work labels 🧠👩🏼‍💻
     runs-on: ubuntu-latest
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:latest
@@ -57,7 +66,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   check_type_labels:
-    name: Check for type labels 👮🏻‍♂️🏷
+    name: Check for type labels 🐖 🦃 🏷
     runs-on: ubuntu-latest
     steps:
       - uses: docker://agilepathway/pull-request-label-checker:latest
