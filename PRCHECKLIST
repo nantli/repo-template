@@ -1,10 +1,9 @@
++title+ **PR checklist** :checkered_flag:
 +task+ No local configuration (passwords, comments, debugging) has been committed 🔒
 +task+ All tasks in linked issues have been addressed 👍🏾
++task+ All necessary labels were set (type,effort,work) 🏷
 
---files /src/** +title+ **Changes to src** ✨
---files /src/** +task+ Bump version number up ⏫
-
---target main +title+ **PR checklist** :checkered_flag:
+--target main +title+ **Relevant branch checklist** 🚨
 --target main +task+ README.md is up to date 📝
 --target main +comment+ All done? merge PR with squash option. /giphy break a leg!
 
