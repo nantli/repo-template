@@ -11,64 +11,47 @@ on:
 
 jobs:
   labeler:
-    name: Labeler 🤖🏷
+    name: Label Police 🏷👮🏻‍♂️
     runs-on: ubuntu-latest
     steps:
-      - uses: fuxingloh/multi-labeler@v1
+      - name: Labeler 🤖🏷
+        uses: fuxingloh/multi-labeler@v1
 
-  check_semver_labels:
-    name: Check for semantic version labels 🚀
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for semantic version labels 🚀
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: patch,minor,major
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  check_conventional_labels:
-    name: Check for conventional Commits labels ✨ 🐛 🧰
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for conventional Commits labels ✨ 🐛 🧰
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: feature,fix,chore
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  check_basic_labels:
-    name: Check for basic PR labels 👮🏻‍♂️🏷
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for basic PR labels 👮🏻‍♂️🏷
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           none_of: |
             duplicate 👯‍♂️,invalid 🙊,tasks to complete,wontfix 🧌,locked: breaking 💥,locked: resolved ✅,locked: spam 👮🏻‍♂️,state: blocked,state: inactive,state: waiting...,
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  check_effort_labels:
-    name: Check for effort labels 💪🏼👨🏼‍💻
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for effort labels 💪🏼👨🏼‍💻
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: |
             effort: 1️⃣,effort: 1️⃣3️⃣,effort: 2️⃣,effort: 3️⃣,effort: 5️⃣,effort: 8️⃣,
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  check_work_labels:
-    name: Check for work labels 🧠👩🏼‍💻
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for work labels 🧠👩🏼‍💻
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: |
             work: clear 🥱,work: complex 😳,work: complicated 😬,work: chaotic 😱,
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
-  check_type_labels:
-    name: Check for type labels 🐖 🦃 🏷
-    runs-on: ubuntu-latest
-    steps:
-      - uses: docker://agilepathway/pull-request-label-checker:latest
+      - name: Check for type labels 🐖 🦃 🏷
+        uses: docker://agilepathway/pull-request-label-checker:latest
         with:
           one_of: |
             type: fix 🩹,type: security 🔒,type: documentation 📝,type: infrastructure 🧱,type: feature ✨,type: hotfix 🚑,type: bug 🐛,type: testing 🔎,type: dx 👩🏼‍💻,type: ci/cd 👷🏾,type: improvement ⚡️,
