@@ -42,7 +42,6 @@ jobs:
         with:
           none_of: |
             duplicate 👯‍♂️,invalid 🙊,tasks to complete,wontfix 🧌,locked: breaking 💥,locked: resolved ✅,locked: spam 👮🏻‍♂️,state: blocked,state: inactive,state: waiting...,
-          one_of: "state: approved"
           repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   check_effort_labels:
