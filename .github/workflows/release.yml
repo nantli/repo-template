@@ -1,4 +1,4 @@
-name: Release 🚀
+name: Release Draft 🚀
 
 on:
   push:
@@ -12,6 +12,12 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@master
 
+      - name: Bump version and push tag
+        uses: moble/github-tag-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - name: Create release draft 📝🚀
         uses: release-drafter/release-drafter@v5
@@ -19,61 +25,3 @@ jobs:
           disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create changelog text 📄
-        id: changelog
-        uses: loopwerk/tag-changelog@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_types: other,docs,chore,refactor,style,revert
-          config_file: .github/tag-changelog-config.js
-
-      - name: Read CHANGELOG.md 👓
-        id: package
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./CHANGELOG.md
-
-      - name: Write to CHANGELOG.md new info 📝
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: ./CHANGELOG.md
-          contents: ${{ steps.changelog.outputs.changelog }}
-          write-mode: overwrite
-
-      - name: Write to CHANGELOG.md old info 📝
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: ./CHANGELOG.md
-          contents: ${{ steps.package.outputs.content }}
-          write-mode: append
-
-      - name: Create Pull Request 🐙
-        uses: peter-evans/create-pull-request@v4
-        id: pullrequest
-        with:
-          commit-message: |
-            chore: update CHANGELOG.md for release [skip ci]
-            #none version bump
-          branch: automated-pr/update-changelog
-          delete-branch: true
-          base: main
-          branch-suffix: timestamp
-          title: "🐷 - chore: update CHANGELOG.md for new release [automated]"
-          body: |
-            Update CHANGELOG.md after new release 
-            #none version bump
-            Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
-          assignees: rolasotelo
-          labels: automated 🤖,chore
-
-      - name: Checkout 🛎 to new branch
-        uses: actions/checkout@master
-        with:
-          ref: ${{ steps.pullrequest.outputs.pull-request-head-sha }}
-
-      - name: Bump version and push tag
-        uses: moble/github-tag-action@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: true
