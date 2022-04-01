@@ -1,4 +1,6 @@
-# v0.4.1 - 2022-04-01
+# v0.5.0 - 2022-04-01
+## ✨ New Features
+- add commands to labeler to help with semver #minor ([#32](https://github.com/nantli/repo-template/pull/32) by [rolasotelo](https://github.com/rolasotelo))# v0.4.1 - 2022-04-01
 ## 🐛 Bugfixes
 - generate changelog after tagger action ([#29](https://github.com/nantli/repo-template/pull/29) by [rolasotelo](https://github.com/rolasotelo))# v0.3.0 - 2022-04-01
 ## ✨ New Features
