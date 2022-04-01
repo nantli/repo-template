@@ -25,3 +25,46 @@ jobs:
           disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create changelog text 📄
+        id: changelog
+        uses: loopwerk/tag-changelog@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          exclude_types: other,docs,chore,refactor,style,revert
+          config_file: .github/tag-changelog-config.js
+
+      - name: Read CHANGELOG.md 👓
+        id: package
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./CHANGELOG.md
+
+      - name: Write to CHANGELOG.md new info 📝
+        uses: DamianReeves/write-file-action@master
+        with:
+          path: ./CHANGELOG.md
+          contents: ${{ steps.changelog.outputs.changelog }}
+          write-mode: overwrite
+
+      - name: Write to CHANGELOG.md old info 📝
+        uses: DamianReeves/write-file-action@master
+        with:
+          path: ./CHANGELOG.md
+          contents: ${{ steps.package.outputs.content }}
+          write-mode: append
+
+      - name: Create Pull Request 🐙
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "docs: update CHANGELOG.md for release [skip ci]"
+          branch: automated-pr/update-changelog
+          delete-branch: true
+          base: main
+          branch-suffix: timestamp
+          title: "🐷 - chore: update CHANGELOG.md for new release [automated]"
+          body: |
+            Update CHANGELOG.md after new release 
+            Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
+          assignees: rolasotelo
+          labels: automated 🤖,chore

@@ -49,9 +49,9 @@ jobs:
           delete-branch: true
           base: main
           branch-suffix: timestamp
-          title: "🐖 - chore: update CHANGELOG.md for new release [automated]"
+          title: "🐷 - chore: update CHANGELOG.md for new release [automated]"
           body: |
             Update CHANGELOG.md after new release 
             Automated changes by [create-pull-request](https://github.com/peter-evans/create-pull-request) GitHub action
           assignees: rolasotelo
-          labels: "automated 🤖"
+          labels: automated 🤖,chore
