@@ -9,6 +9,15 @@ jobs:
   update_release_draft:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Bump version and push tag
+        uses: moble/github-tag-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - name: Create release draft 📝🚀
         uses: release-drafter/release-drafter@v5
@@ -16,12 +25,3 @@ jobs:
           disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/checkout@master
-
-      - name: Automated SemVer tag 🤖🏷
-        uses: hennejg/github-tag-action@v4.1.jh1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          release_branches: main
-          create_annotated_tag: true
