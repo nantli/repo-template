@@ -13,11 +13,11 @@ permissions:
 
 jobs:
   comment:
-    name: Comment after label change 🏷
+    name: Comment after label change 💬🏷
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
-      - name: Label Commenter 🏷
+      - name: Label Commenter 💬🏷
         uses: peaceiris/actions-label-commenter@v1
