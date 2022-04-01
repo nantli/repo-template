@@ -1,0 +1,143 @@
+version: v1
+
+labels:
+  - label: "feature"
+    sync: true
+    matcher:
+      title: ".*feat: .*"
+
+  - label: "fix"
+    sync: true
+    matcher:
+      title: ".*fix: .*"
+
+  - label: "chore"
+    sync: true
+    matcher:
+      title: ".*chore: .*"
+
+  - label: "breaking"
+    sync: true
+    matcher:
+      body: "(\\n|.)*BREAKING CHANGES: (\\n|.)*"
+      commmits: "(\\n|.)*BREAKING CHANGE: (\\n|.)*"
+      comment: "(\\n|.)*BREAKING CHANGE: (\\n|.)*"
+
+  - label: "attention 🚨"
+    sync: true
+    matcher:
+      files:
+        any: ["src/**", "**/src/**"]
+        count:
+          neq: 1
+
+  - label: "tasks to complete"
+    sync: true
+    matcher:
+      body: "(\\n|.)*- \\[ \\] (\\n|.)*"
+      comment: "(\\n|.)*- \\[ \\] (\\n|.)*"
+
+  - label: "type: feature ✨"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/feat(\\n|.)*"
+
+  - label: "type: documentation 📝"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/docs(\\n|.)*"
+
+  - label: "type: fix 🩹"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/fix(\\n|.)*"
+
+  - label: "type: hotfix 🚑"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/hotfix(\\n|.)*"
+
+  - label: "type: infrastructure 🧱"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/infra(\\n|.)*"
+
+  - label: "type: security 🔒"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/security(\\n|.)*"
+
+  - label: "type: bug 🐛"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/bug(\\n|.)*"
+
+  - label: "type: testing 🤖"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/test(\\n|.)*"
+
+  - label: "type: improvement ⚡️"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/imp(\\n|.)*"
+
+  - label: "type: dx 👩🏼‍💻"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/dx(\\n|.)*"
+
+  - label: "type: ci/cd 👷🏾"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/ci(\\n|.)*"
+
+  - label: "type: question 🤷🏽‍♀️"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/question(\\n|.)*"
+
+  - label: "work: clear 🥱"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/clear(\\n|.)*"
+
+  - label: "work: chaotic 😱"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/chaotic(\\n|.)*"
+
+  - label: "work: complicated 😬"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/complicated(\\n|.)*"
+
+  - label: "work: complex 😳"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/complex(\\n|.)*"
+
+  - label: "effort: 1️⃣"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/1 (\\n|.)*"
+
+  - label: "effort: 2️⃣"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/2(\\n|.)*"
+
+  - label: "effort: 3️⃣"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/3(\\n|.)*"
+
+  - label: "effort: 5️⃣"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/5(\\n|.)*"
+
+  - label: "effort: 1️⃣3️⃣"
+    sync: true
+    matcher:
+      body: "(\\n|.)*/13(\\n|.)*"
