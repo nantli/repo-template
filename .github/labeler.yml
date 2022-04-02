@@ -19,9 +19,9 @@ labels:
   - label: "breaking"
     sync: true
     matcher:
-      body: "(\\n|.)*BREAKING CHANGES: (\\n|.)*"
-      commmits: "(\\n|.)*BREAKING CHANGE: (\\n|.)*"
-      comment: "(\\n|.)*BREAKING CHANGE: (\\n|.)*"
+      body: "(\\n|.)*BREAKING CHANGE(S|): (\\n|.)*"
+      commmits: "(\\n|.)*BREAKING CHANGE(S|): (\\n|.)*"
+      comment: "(\\n|.)*BREAKING CHANGE(S|): (\\n|.)*"
 
   - label: "attention 🚨"
     sync: true
