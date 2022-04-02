@@ -7,6 +7,7 @@ This repository is meant to be used as an initial kick starter for your new proj
 ## Checklist
 
 - [ ] Replace this README.md file with one of your liking. You can keep what serves you though
+- [ ] Replace CHANGELOG.md file with one of your liking. We recommend following the ['Keep a Changelog'](https://keepachangelog.com/en/1.0.0/) format, which this repo follows.
 - [ ] Update licensor in LICENSE file if needed
 
 ## But also
