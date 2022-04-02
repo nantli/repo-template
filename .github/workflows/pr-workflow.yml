@@ -17,12 +17,6 @@ jobs:
       - name: Labeler 🤖🏷
         uses: fuxingloh/multi-labeler@v1
 
-      - name: Check for semantic version labels 🚀
-        uses: docker://agilepathway/pull-request-label-checker:latest
-        with:
-          one_of: patch,minor,major
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Check for conventional Commits labels ✨ 🐛 🧰
         uses: docker://agilepathway/pull-request-label-checker:latest
         with:

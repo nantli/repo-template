@@ -16,24 +16,6 @@ labels:
     matcher:
       title: ".*chore: .*"
 
-  - label: "patch"
-    sync: true
-    matcher:
-      title: ".*#patch.*"
-      body: ".*#patch.*"
-
-  - label: "minor"
-    sync: true
-    matcher:
-      title: ".*#minor.*"
-      body: ".*#minor.*"
-
-  - label: "major"
-    sync: true
-    matcher:
-      title: ".*#major.*"
-      body: ".*#major.*"
-
   - label: "breaking"
     sync: true
     matcher:
@@ -73,7 +55,7 @@ labels:
   - label: "type: hotfix 🚑"
     sync: true
     matcher:
-      body: "(\\n|.)*/hotfix(\\n|.)*"
+      body: "(\\n|.)*/hf (\\n|.)*"
 
   - label: "type: infrastructure 🧱"
     sync: true
@@ -83,7 +65,7 @@ labels:
   - label: "type: security 🔒"
     sync: true
     matcher:
-      body: "(\\n|.)*/security(\\n|.)*"
+      body: "(\\n|.)*/sec (\\n|.)*"
 
   - label: "type: bug 🐛"
     sync: true
@@ -113,7 +95,7 @@ labels:
   - label: "type: question 🤷🏽‍♀️"
     sync: true
     matcher:
-      body: "(\\n|.)*/question(\\n|.)*"
+      body: "(\\n|.)*/q (\\n|.)*"
 
   - label: "work: clear 🥱"
     sync: true

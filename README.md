@@ -17,7 +17,7 @@ Next you can find a list of things you need to consider when using this template
 - Label commenter workflow (by @peaceiris) configuration is customized to be used inside @nantli and before you can use it outside of the organization you will need to update [label-commenter-config.yml](.github/label-commenter-config.yml) to your liking.
 - Generate changelog workflow (by @loopwerk) assumes the use of [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
 - Multi labeler workflow (by @fuxingloh) configuration is also customized to be used inside @nantli and before you can use it outside of the organization you will need to update [labeler.yml](.github/labeler.yml) to your liking.
-- Label Checker workflow (by @agilepathway) configuration is also customized to be used inside @nantli and before you can use it outside of the organization you will need to update [pr-triage.yml](.github/workflow/pr-triage.yml) to your liking, look for jobs starting with 'check\_'.
+- Label Checker workflow (by @agilepathway) configuration is also customized to be used inside @nantli and before you can use it outside of the organization you will need to update [pr-workflow.yml](.github/workflow/pr-workflow.yml) to your liking, look for jobs starting with 'check\_'.
 
 ### A quick introduction to Conventional Commits format
 
