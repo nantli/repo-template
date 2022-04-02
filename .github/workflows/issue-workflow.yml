@@ -1,3 +1,4 @@
+name: PR workflow 👩🏽‍🌾👨🏼‍💻
 on:
   issues:
     types: [opened, edited]

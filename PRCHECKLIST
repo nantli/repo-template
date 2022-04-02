@@ -3,9 +3,9 @@
 +task+ All tasks in linked issues have been addressed 👍🏾
 +task+ All necessary labels were set (type,effort,work) 🏷
 
---target main +title+ **Relevant branch checklist** 🚨
+--target main +title+ **Relevant branch checklist** 🔍
 --target main +task+ README.md is up to date 📝
---target main +comment+ All done? merge PR with squash option (Do not forget to add a release tag: patch, minor, major or none).
+--target main +comment+ All done? merge PR with squash option.
 
 # Use instructions for 'Pull Request Checklist Buddy' app
 # Checklist Buddy by Mibex Software https://www.mibexsoftware.com/
