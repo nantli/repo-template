@@ -1,3 +1,31 @@
+#                     . .:.:.:.:. .:\     /:. .:.:.:.:. ,
+#                .-._  `..:.:. . .:.:`- -':.:. . .:.:.,'  _.-.
+#               .:.:.`-._`-._..-''_...---..._``-.._.-'_.-'.:.:.
+#            .:.:. . .:_.`' _..-''._________,``-.._ `.._:. . .:.:.
+#         .:.:. . . ,-'_.-''      ||_-(O)-_||      ``-._`-. . . .:.:.
+#        .:. . . .,'_.'           '---------'           `._`.. . . .:.
+#      :.:. . . ,','               _________               `.`. . . .:.:
+#     `.:.:. .,','            _.-''_________``-._            `._.     _.'
+#   -._  `._./ /            ,'_.-'' ,       ``-._`.          ,' '`:..'  _.-
+#  .:.:`-.._' /           ,','                   `.`.       /'  '  \\.-':.:.
+#  :.:. . ./ /          ,','               ,       `.`.    / '  '  '\\. .:.:
+# :.:. . ./ /          / /    ,                      \ \  :  '  '  ' \\. .:.:
+# .:. . ./ /          / /            ,          ,     \ \ :  '  '  ' '::. .:.
+# :. . .: :    o     / /                               \ ;'  '  '  ' ':: . .:
+# .:. . | |   /_\   : :     ,                      ,    : '  '  '  ' ' :: .:.
+# :. . .| |  ((<))  | |,          ,       ,             |\'__',-._.' ' ||. .:
+# .:.:. | |   `-'   | |---....____                      | ,---\/--/  ' ||:.:.
+# ------| |         : :    ,.     ```--..._   ,         |''  '  '  ' ' ||----
+# _...--. |  ,       \ \             ,.    `-._     ,  /: '  '  '  ' ' ;;..._
+# :.:. .| | -O-       \ \    ,.                `._    / /:'  '  '  ' ':: .:.:
+# .:. . | |_(`__       \ \                        `. / / :'  '  '  ' ';;. .:.
+# :. . .<' (_)  `>      `.`.          ,.    ,.     ,','   \  '  '  ' ;;. . .:
+# .:. . |):-.--'(         `.`-._  ,.           _,-','      \ '  '  '//| . .:.
+# :. . .;)()(__)(___________`-._`-.._______..-'_.-'_________\'  '  //_:. . .:
+# .:.:,' \/\/--\/--------------------------------------------`._',;'`. `.:.:.
+# :.,' ,' ,'  ,'  /   /   /   ,-------------------.   \   \   \  `. `.`. `..:
+# ,' ,'  '   /   /   /   /   //                   \\   \   \   \   \  ` `.SSt
+---
 comment:
   header: Hi 👋🏾, there you earthlings 👩🏽‍🌾 👨🏿‍🌾 🐄 🐖 🦃
   footer: "Be kind to animals 🐄 🐖 🦃"
@@ -10,7 +38,7 @@ labels:
           🏷 ( MVPR 🌮 )
           You 'nantli' 👨🏿‍🌾 deserve a vegan taco 🌮!
 
-          Your effort is very much appreciated, please someone in here type '/ghipy Have a taco! in a comment'
+          Your effort is very much appreciated, please someone in here type '/giphy Have a taco! in a comment'
   - name: "locked: resolved ✅"
     labeled:
       issue:
@@ -132,13 +160,13 @@ labels:
           🏷 ( help wanted 🙏🏾 )
           Hello, anybody out there 👀 ?
 
-          Any help would be very much appreciated 🐧. Maybe a '/ghipy help!' on the comments could do something 🦩.
+          Any help would be very much appreciated 🐧. Maybe a '/giphy help!' on the comments could do something 🦩.
       pr:
         body: |
           🏷 ( help wanted 🙏🏾 )
           Hello, anybody out there 👀 ?
 
-          Any help would be very much appreciated 🐧. Maybe a '/ghipy help!' on the comments could do something 🦩.
+          Any help would be very much appreciated 🐧. Maybe a '/giphy help!' on the comments could do something 🦩.
   - name: invalid 🙊
     labeled:
       issue:
