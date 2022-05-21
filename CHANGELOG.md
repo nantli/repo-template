@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add super-linter workflow by [@rolasotelo](https://github.com/rolasotelo).
+- Create to separete labeler workflows (only one triggers giphy workflow) by [@rolasotelo](https://github.com/rolasotelo).
+
 ## [2.0.0] - 2022-05-20
 
 ### Added

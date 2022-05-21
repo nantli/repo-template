@@ -19,7 +19,7 @@ on:
   pull_request_target:
     types: [labeled, unlabeled]
   workflow_run:
-    workflows: [PR labeler 👨🏼‍💻 🏷]
+    workflows: [PR Mandatory labeler 🚔 🏷]
     types:
       - completed
 
