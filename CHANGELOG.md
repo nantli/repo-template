@@ -8,10 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0] - 2022-05-21
+
 ### Added
 
 - Add super-linter workflow by [@rolasotelo](https://github.com/rolasotelo).
-- Create to separete labeler workflows (only one triggers giphy workflow) by [@rolasotelo](https://github.com/rolasotelo).
 
 ## [2.0.0] - 2022-05-20
 
@@ -42,7 +43,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add GitHub action that labels PRs and issues by looking at their content (title, body, comments and commits) by [@rolasotelo](https://github.com/rolasotelo).
 - Add GitHub action that checks for required and prohibited labels present in a PRs by [@rolasotelo](https://github.com/rolasotelo).
 
-[unreleased]: https://github.com/nantli/repo-template/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/nantli/repo-template/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/nantli/repo-template/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/nantli/repo-template/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/nantli/repo-template/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/nantli/repo-template/compare/v0.0.0...v1.0.0

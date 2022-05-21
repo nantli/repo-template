@@ -11,13 +11,14 @@
 #         `    `         `               V               '         '    '
 
 # Vivian Aldridge
+---
 name: Comment labels 💬
 
 on:
   issues:
-    types: [labeled, unlabeled]
+    types: [labeled]
   pull_request_target:
-    types: [labeled, unlabeled]
+    types: [labeled]
 
 permissions:
   contents: read
