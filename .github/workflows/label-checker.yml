@@ -17,11 +17,7 @@ on:
     types:
       - ready_for_review
       - review_requested
-  workflow_run:
-    workflows: [PR labeler 👨🏼‍💻 🏷]
-    types:
-      - completed
-  workflow_dispatch:
+      - synchronize
 
 jobs:
   labeler:
