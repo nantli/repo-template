@@ -5,7 +5,7 @@
     ],
     "ignore": [
       "**/__snapshots__/**",
-      ".github/label-commenter-config.yml"
+      "**/.github/label-commenter-config.yml"
     ],
     "absolute": true
   }
