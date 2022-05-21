@@ -2,7 +2,7 @@
 
 > A basic template for creating new repositories at @nantli organization
 
-This repository is meant to be used as an initial kick starter for your new project, but some initial work is required to adecuated it to your new adventure. GLHF!
+Use this repository as an initial kick starter for your new project, but some initial work is required to adequate it for your new adventure. GLHF!
 
 ## Checklist
 
@@ -12,14 +12,12 @@ This repository is meant to be used as an initial kick starter for your new proj
 
 ## But also
 
-Next you can find a list of things you need to consider when using this template
+Next, you can find a list of things you need to consider when using this template
 
-- A PR linter GitHub action ([action-semantic-pull-request](https://github.com/amannn/action-semantic-pull-request)) exists to watch that PRs follow Conventional Commits spec. This works well with SemVer and a couple other actions listed below.
-- Giphy generator workflow ([giphy-generator](https://github.com/IAmHughes/giphy-generator)) will need GIPHY_TOKEN secret to be set at your repo, profile or organization level, in order to work.
-- Label commenter workflow ([label-commenter](https://github.com/peaceiris/actions-label-commenter)) configuration is customized to be used inside @nantli and before you can use it outside of the organization you will need to update [label-commenter-config.yml](.github/label-commenter-config.yml) to your liking.
-- Release Drafter workflow ([release-drafter](https://github.com/release-drafter/release-drafter)) assumes the use of [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
-- Multi labeler workflow ([multi-labeler](https://github.com/fuxingloh/multi-labeler)) configuration is also customized to be used inside @nantli and before you can use it outside of the organization you will need to update [labeler.yml](.github/labeler.yml) to your liking.
-- Label Checker workflow ([label-checker](https://github.com/agilepathway/label-checker)) configuration is also customized to be used inside @nantli and, and it helps with following Conventional Commits spec and SemVer, before you can use it outside of the organization you will need to update [pr-workflow.yml](.github/workflow/pr-workflow.yml) to your liking, look for jobs starting with 'check\_'.
+- The use of SemVer is assumed.
+- Giphy generator workflow ([giphy-generator](https://github.com/IAmHughes/giphy-generator)) will need GIPHY_TOKEN secret to be set.
+- Label commenter workflow ([label-commenter](https://github.com/peaceiris/actions-label-commenter)) configuration is customized to be used inside @nantli, and before you can use it outside of the organization, you will need to update [label-commenter-config.yml](.github/label-commenter-config.yml) to your liking.
+- PR and Issue labeler workflows ([multi-labeler](https://github.com/fuxingloh/multi-labeler)) configuration is also customized to be used inside @nantli, and before you can use it outside of the organization, you will need to update [labeler.yml](.github/labeler.yml) to your liking.
 
 ### A quick introduction to Conventional Commits format
 
