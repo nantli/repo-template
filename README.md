@@ -1,10 +1,6 @@
 # Repository Template we use at Nantli 👨🏿‍🌾
 
-<p align="center">
-    <a href="https://github.com/marketplace/actions/super-linter">
-        <img src="https://github.com/nantli/repo-template/workflows/Lint%20Code%20Base/badge.svg"/>
-    </a>
-</p>
+[![Lint Code Base 🦝](https://github.com/nantli/repo-template/actions/workflows/linter.yml/badge.svg)](https://github.com/nantli/repo-template/actions/workflows/linter.yml)
 
 Use this repository as an initial kick starter for your new project, but some initial work is required to adequate it for your new adventure. GLHF!
 
