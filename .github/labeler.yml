@@ -1,12 +1,12 @@
 version: v1
 
 labels:
-  - label: "feature"
+  - label: "minor"
     sync: true
     matcher:
       title: ".*feat: .*"
 
-  - label: "fix"
+  - label: "patch"
     sync: true
     matcher:
       title: ".*fix: .*"
@@ -16,7 +16,7 @@ labels:
     matcher:
       title: ".*chore: .*"
 
-  - label: "breaking"
+  - label: "major"
     sync: true
     matcher:
       body: "(\\n|.)*BREAKING CHANGE(S|): (\\n|.)*"
@@ -30,12 +30,6 @@ labels:
         any: ["src/**", "**/src/**"]
         count:
           neq: 1
-
-  - label: "tasks to complete"
-    sync: true
-    matcher:
-      body: "(\\n|.)*- \\[ \\] (\\n|.)*"
-      comment: "(\\n|.)*- \\[ \\] (\\n|.)*"
 
   - label: "type: feature ✨"
     sync: true

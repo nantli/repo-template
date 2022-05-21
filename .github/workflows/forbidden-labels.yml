@@ -1,0 +1,36 @@
+#           | o     |
+#           |       |
+#        _  | |  () |
+#       ( '=| |     |
+#      /  ( |     | |
+#     / / |/|   |   |
+#     |/\ |/|       |
+#        \\ | ()    |
+#         \\|    |  |
+#           |    |  |
+#           |       |
+#           |  |    |
+# -dana`98- |       |
+---
+name: Forbidden label checker 👮🏻‍♂️
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - labeled
+      - unlabeled
+
+jobs:
+
+  check_labels:
+    name: Check labels 🚓
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Check for forbidden labels 🕵🏾‍♂️
+        uses: docker://agilepathway/pull-request-label-checker:latest
+        with:
+          none_of: |
+            duplicate 👯‍♂️,invalid 🙊,tasks to complete,wontfix 🧌,locked: breaking 💥,locked: resolved ✅,locked: spam 👮🏻‍♂️,state: blocked,state: inactive,state: waiting...,
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
