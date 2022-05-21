@@ -9,7 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add CHANGELOG.md file following 'Keep a Changelog' by format [@rolasotelo](https://github.com/rolasotelo).
+- Add CHANGELOG.md file following 'Keep a Changelog' by [@rolasotelo](https://github.com/rolasotelo).
+
+### Changed
+
+- Run Certain Workflows after the completion of others by [@rolasotelo](https://github.com/rolasotelo).
+
+### Removed
+- Release Drafter workflow
 
 ## [1.1.0] - 2022-04-02
 

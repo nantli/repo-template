@@ -1,0 +1,21 @@
+# Duck by Joan Stark
+#       _          _          _          _          _
+#     >(')____,  >(')____,  >(')____,  >(')____,  >(') ___,
+#       (` =~~/    (` =~~/    (` =~~/    (` =~~/    (` =~~/
+# jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
+---
+name: PR labeler 👨🏼‍💻 🏷
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+
+jobs:
+  labeler:
+    name: Labeler 🏷
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fuxingloh/multi-labeler@v1

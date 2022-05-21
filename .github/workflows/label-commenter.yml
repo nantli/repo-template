@@ -1,10 +1,27 @@
-name: Comment label change 💬🏷
+#                       _..-'(                       )`-.._
+#                    ./'. '||\\.       (\_/)       .//||` .`\.
+#                 ./'.|'.'||||\\|..    )O O(    ..|//||||`.`|.`\.
+#              ./'..|'.|| |||||\`````` '`"'` ''''''/||||| ||.`|..`\.
+#            ./'.||'.|||| ||||||||||||.     .|||||||||||| |||||.`||.`\.
+#           /'|||'.|||||| ||||||||||||{     }|||||||||||| ||||||.`|||`\
+#          '.|||'.||||||| ||||||||||||{     }|||||||||||| |||||||.`|||.`
+#         '.||| ||||||||| |/'   ``\||``     ''||/''   `\| ||||||||| |||.`
+#         |/' \./'     `\./         \!|\   /|!/         \./'     `\./ `\|
+#         V    V         V          }' `\ /' `{          V         V    V
+#         `    `         `               V               '         '    '
+
+# Vivian Aldridge
+name: Comment labels 💬
 
 on:
   issues:
     types: [labeled, unlabeled]
   pull_request_target:
     types: [labeled, unlabeled]
+  workflow_run:
+    workflows: [PR labeler 👨🏼‍💻 🏷]
+    types:
+      - completed
 
 permissions:
   contents: read
@@ -13,11 +30,11 @@ permissions:
 
 jobs:
   comment:
-    name: Comment after label change 💬🏷
+    name: Comment label change 🏷
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
-      - name: Label Commenter 💬🏷
+      - name: Label Commenter 💬 🏷
         uses: peaceiris/actions-label-commenter@v1
