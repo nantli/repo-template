@@ -1,13 +1,31 @@
 +title+ **PR checklist** :checkered_flag:
-+task+ No local configuration (passwords, comments, debugging) has been committed 🔒
++task+ No local configuration (passwords, comments, debugging) is committed 🔒
 +task+ All tasks in linked issues have been addressed 👍🏾
-+task+ All necessary labels were set (type,effort,work) 🏷
++task+ All necessary labels were set (type, effort, work) 🏷
 
 --target main +title+ **Relevant branch checklist** 🔍
 --target main +task+ All necessary reviews have been requested 👩🏽‍🌾 🦃 🐄 🐖
+--target main +task+ SemVer label was set  🏷 ✨ 🐛 🧰
 --target main +task+ README.md is up to date 📝
 --target main +task+ CHANGELOG.md is up to date 📄
 --target main +comment+ All done? merge PR with squash option 🚀
+
+#  _______\\__
+# (_. _ ._  _/
+#  '-' \__. /
+#       /  /
+#      /  /    .--.  .--.
+#     (  (    / '' \/ '' \   "
+#      \  \_.'            \   )
+#      ||               _  './
+#       |\   \     ___.'\  /
+#         '-./   .'    \ |/
+#            \| /       )|\
+#             |/       // \\
+#             |\    __//   \\__
+#            //\\  /__/  mrf\__|
+#        .--_/  \_--.
+#       /__/      \__\
 
 # Use instructions for 'Pull Request Checklist Buddy' app
 # Checklist Buddy by Mibex Software https://www.mibexsoftware.com/

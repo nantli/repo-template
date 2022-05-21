@@ -1,0 +1,25 @@
+# Art by Horroroso
+#                     _,,......_
+#                  ,-'          `'--.
+#               ,-'  _              '-.
+#      (`.    ,'   ,  `-.              `.
+#       \ \  -    / )    \               \
+#        `\`-^^^, )/      |     /         :
+#          )^ ^ ^V/            /          '.
+#          |      )            |           `.
+#          9   9 /,--,\    |._:`         .._`.
+#          |    /   /  `.  \    `.      (   `.`.
+#          |   / \  \    \  \     `--\   )    `.`.___
+# -hrr-   .;;./  '   )   '   )       ///'       `-"'
+#         `--'   7//\    ///\
+name: Issue labeler 👩🏽‍🌾 🏷
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  labeler:
+    name: Labeler 🏷
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fuxingloh/multi-labeler@v1

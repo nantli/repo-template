@@ -1,8 +1,6 @@
 comment:
   header: Hi 👋🏾, there you earthlings 👩🏽‍🌾 👨🏿‍🌾 🐄 🐖 🦃
-  footer: "\
-    ---\n\n\
-    > This is an automated comment created by the 'Label Commenter 🏷' action."
+  footer: "Be kind to animals 🐄 🐖 🦃"
 
 labels:
   - name: mvpr 🌮
@@ -12,7 +10,8 @@ labels:
           🏷 ( MVPR 🌮 )
           You 'nantli' 👨🏿‍🌾 deserve a vegan taco 🌮!
 
-          Your effort is very much appreciated, please someone in here type '/ghipy Have a taco! in a comment'
+          Your effort is very much appreciated. 
+          /ghipy Have a taco!
   - name: "locked: resolved ✅"
     labeled:
       issue:
