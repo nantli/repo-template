@@ -18,10 +18,6 @@ on:
     types: [labeled, unlabeled]
   pull_request_target:
     types: [labeled, unlabeled]
-  workflow_run:
-    workflows: [PR Mandatory labeler 🚔 🏷]
-    types:
-      - completed
 
 permissions:
   contents: read
