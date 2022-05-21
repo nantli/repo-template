@@ -116,22 +116,6 @@ labels:
           🏷 ( duplicate 👯‍♂️ )
           We really appreciate your time and help, but this issue already exists 🐫.
         action: close
-  - name: "effort: 1️⃣3️⃣"
-    labeled:
-      issue:
-        body: |
-          🏷 ( effort: 1️⃣3️⃣ )
-          Bring the pop corn 🍿!
-
-          Please someone throw to these brave earthlings a '/giphy machete' or '/giphy you have my sword', or something better maybe, in the comments.          
-          Let's show some love and respect 🦃!
-      pr:
-        body: |
-          🏷 ( effort: 1️⃣3️⃣ )
-          What a team of legends 🫶🏻!
-
-          Please someone throw to these brave earthlings a '/giphy machete' or '/giphy you have my sword', or something better maybe, in the comments.          
-          Let's show some love and respect 🦃!
   - name: good first issue 👑
     labeled:
       issue:
@@ -186,62 +170,6 @@ labels:
           🏷 ( wontfix 🧌 )
           This has become active again 🐖.
         action: open
-  - name: "work: clear 🥱"
-    labeled:
-      issue:
-        body: |
-          🏷 ( work: clear 🥱 )
-          In "clear" contexts, your options are obvious, clear and cause-and-effect relationships are apparent to everyone involved.
-
-          Here, there are often explicit steps in place that dictate the next stage of the process.
-      pr:
-        body: |
-          🏷 ( work: clear 🥱 )
-          In "clear" contexts, your options are obvious, clear and cause-and-effect relationships are apparent to everyone involved.
-
-          Here, there are often explicit steps in place that dictate the next stage of the process.
-  - name: "work: complicated 😬"
-    labeled:
-      issue:
-        body: |
-          🏷 ( work: complicated 😬 )
-          "Complicated" problems might have several "correct" solutions. Here, there is a clear relationship between cause and effect, but it may not be visible to everyone, because the problem is... complicated. 
-
-          The decision-making approach here is to "Sense then Analyze then Respond." In other words, you need to assess the situation, analyze what is known (often with the help of experts), and decide on the best response, using good practice.
-      pr:
-        body: |
-          🏷 ( work: complicated 😬 )
-          "Complicated" problems might have several "correct" solutions. Here, there is a clear relationship between cause and effect, but it may not be visible to everyone, because the problem is... complicated. 
-
-          The decision-making approach here is to "Sense then Analyze then Respond." In other words, you need to assess the situation, analyze what is known (often with the help of experts), and decide on the best response, using good practice.
-  - name: "work: complex 😳"
-    labeled:
-      issue:
-        body: |
-          🏷 ( work: complex 😳 )
-          It might be impossible to identify one "correct" solution, or spot cause-and-effect relationships, in "complex" situations.
-
-          Complex contexts are often unpredictable, and the best approach here is to "Probe then Sense then Respond." Rather than trying to control the situation or insisting on a plan of action, it's often best to be patient, look for patterns, and encourage a solution to emerge.
-      pr:
-        body: |
-          🏷 ( work: complex 😳 )
-          It might be impossible to identify one "correct" solution, or spot cause-and-effect relationships, in "complex" situations.
-
-          Complex contexts are often unpredictable, and the best approach here is to "Probe then Sense then Respond." Rather than trying to control the situation or insisting on a plan of action, it's often best to be patient, look for patterns, and encourage a solution to emerge.
-  - name: "work: chaotic 😱"
-    labeled:
-      issue:
-        body: |
-          🏷 ( work: chaotic 😱 )
-          In "chaotic" situations, no relationship between cause and effect exists, so your primary goal is to establish order and stability. Crisis and emergency scenarios often fall into this domain.
-
-          The decision-making approach here is to "Act then Sense then Respond." You need to act decisively to address the most pressing issues, sense where there is stability and where there isn't, and then respond to move the situation from chaos to complexity.
-      pr:
-        body: |
-          🏷 ( work: chaotic 😱 )
-          In "chaotic" situations, no relationship between cause and effect exists, so your primary goal is to establish order and stability. Crisis and emergency scenarios often fall into this domain.
-
-          The decision-making approach here is to "Act then Sense then Respond." You need to act decisively to address the most pressing issues, sense where there is stability and where there isn't, and then respond to move the situation from chaos to complexity.
   - name: "type: hotfix 🚑"
     labeled:
       issue:

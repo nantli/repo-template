@@ -1,13 +1,17 @@
 # Repository Template we use at Nantli 👨🏿‍🌾
 
-> A basic template for creating new repositories at @nantli organization
+<p align="center">
+    <a href="https://github.com/marketplace/actions/super-linter">
+        <img src="https://github.com/nantli/repo-template/workflows/Lint%20Code%20Base/badge.svg"/>
+    </a>
+</p>
 
 Use this repository as an initial kick starter for your new project, but some initial work is required to adequate it for your new adventure. GLHF!
 
 ## Checklist
 
 - [ ] Replace this README.md file with one of your liking. You can keep what serves you though
-- [ ] Replace CHANGELOG.md file with one of your liking. We recommend following the ['Keep a Changelog'](https://keepachangelog.com/en/1.0.0/) format, which this repo follows.
+- [ ] Replace CHANGELOG.md file with one of your liking. We recommend following the ['Keep a Changelog'](https://keepachangelog.com/en/1.0.0/) format, which this repository follows.
 - [ ] Update licensor in LICENSE file if needed
 
 ## But also
@@ -23,7 +27,7 @@ Next, you can find a list of things you need to consider when using this templat
 
 This is how a commit looks like in Conventional Commits format:
 
-```
+```bash
 <type>[optional scope]: <description>
 
 [optional body]
@@ -37,7 +41,7 @@ Finally, for the optional footers, BREAKING CHANGE must be used when a commit in
 
 #### Example
 
-```
+```bash
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
