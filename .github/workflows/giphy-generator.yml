@@ -38,10 +38,6 @@ on:
     types: [opened]
   issue_comment:
     types: [created]
-  workflow_run:
-    workflows: [Comment labels 💬]
-    types:
-      - completed
 
 jobs:
   giphy-generator:

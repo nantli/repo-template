@@ -4,12 +4,12 @@
 #       (` =~~/    (` =~~/    (` =~~/    (` =~~/    (` =~~/
 # jgs~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~^`---'~^~^~
 ---
-name: PR labeler 👨🏼‍💻 🏷
+name: PR Mandatory labeler 🚔 🏷
 on:
   pull_request:
     types:
-      - synchronize
-      - reopened
+      - opened
+      - edited
 
 jobs:
   labeler:
