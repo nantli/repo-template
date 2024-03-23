@@ -12,7 +12,7 @@
             "emoji": "🤷‍",
             "name": "Empty",
             "description": "Use this when no scope applies",
-            "conditional": ["chore","refactor"]
+            "conditional": ["chore","refactor","docs"]
         }
     ]
 }
