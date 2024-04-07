@@ -6,11 +6,14 @@ This repository serves as a template for creating new projects here at @nantli. 
 
 - direnv: https://direnv.net/
 - make: https://www.gnu.org/software/make/
+- gum: https://github.com/charmbracelet/gum
 
 ## Usage
 
 1. Clone this repository using the `git clone` command.
-2. Run `make update` to update all the tools used in this repository.
+2. cd into the repository
+3. Run `direnv allow` to allow and load .envrc
+4. Run `make setup_dev` to install and set up the development environment.
 
 ### Commiting changes
 
@@ -22,3 +25,10 @@ The goodcommit tool is configured using the `GOODCOMMIT_CONFIG_PATH` environment
 
 Two modules that you most likely will configure very early on are 'types' and 'scopes'. Do this by editing the `commit_types.json` and `commit_scopes.json` files in the `.repo/configs` directory. The idea of these modules it to follow the conventions of [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/). So feel free to add new types and scopes as you see fit.
 
+### Running pre-commit hooks
+
+This repository uses pre-commit hooks to ensure that the code is formatted and linted properly. To run the pre-commit hooks, run `make pre_commit`. Otherwise, the pre-commit hooks will run automatically when you make a commit.
+
+#### Configuring pre-commit hooks
+
+The pre-commit hooks are configured using the `.pre-commit-config.yaml` file in .repo directory. The idea of this file is to ensure that the code is formatted and linted properly. To learn more about configuring pre-commit hooks, see the [pre-commit documentation](https://pre-commit.com/).
