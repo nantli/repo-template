@@ -6,7 +6,7 @@ update_dev: update_goodcommit
 setup_dev: install_dev set_up_pre_commit
 
 update_goodcommit:
-	go install github.com/nantli/goodcommit/cmd/goodcommit@v1.1.0-prerelease.2.0
+	go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0
 
 install_dev:
 	echo "🐍・Installing python dev dependencies"

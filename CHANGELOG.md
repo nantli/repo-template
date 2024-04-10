@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - Makefile with `setup_dev` and `update_dev` targets to update all the tools used in this repository.
-- Add goodcommit as the main tool for creating commit messages.
+- Add goodcommit v1.2.0 as the main tool for creating commit messages.
 - Add pre-commit to ensure that the code is formatted and linted properly.
 - Add gitlint hook to ensure that the commit messages are written in the correct format.
 - Makefile with `pre_commit` target to run the pre-commit hooks.
