@@ -1,0 +1,48 @@
+version: '3'
+
+tasks:
+
+  gc:
+    cmds:
+      - git add .
+      - goodcommit
+
+  pre_commit:
+      cmds:
+        - echo "🚓・Running pre-commit in all files"
+        - pre-commit run --all-files
+        - echo "Done 🪇"
+
+  setup_dev:
+    deps: [install_python_dev_dependencies, set_up_pre_commit, install_goodcommit]
+
+  install_goodcommit:
+    cmds:
+      - go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0
+
+  install_python_dev_dependencies:
+    cmds:
+      - echo "🐍・Installing python dev dependencies"
+      - gum spin --spinner monkey --title "Installing..." -- pip3 install -r .repo/requirements.txt
+      - echo "Done 🪇"
+
+  set_up_pre_commit:
+    deps: [check_venv_exists_exit_if_not, install_precommit]
+
+  check_venv_exists_exit_if_not:
+    cmds:
+      - |
+        echo "🐍・Checking if venv is activated"
+        if [ -z $$VIRTUAL_ENV ]; then
+          echo "Not activated ❌"
+          echo "Please activate it with: source venv/bin/activate"
+          exit 1
+        else
+          echo "Python virtual environment is active 🐍"
+        fi
+
+  install_precommit:
+    cmds:
+      - echo "🚓・Setting up pre-commit"
+      - gum spin --spinner monkey --title "Setting up..." -- pre-commit install
+      - echo "Done 🪇"

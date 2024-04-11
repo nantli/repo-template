@@ -2,17 +2,17 @@
     "scopes": [
         {
             "id": "git",
-            "emoji": "🐱",
+            "emoji": "🐙",
             "name": "Git",
             "description": "Use this when changes are made to tools sorrounding git",
             "conditional": ["feat","fix","chore","refactor","docs"]
         },
         {
-            "id": "empty",
-            "emoji": "🤷‍",
-            "name": "Empty",
-            "description": "Use this when no scope applies",
-            "conditional": ["chore","refactor","docs"]
+            "id": "tasks",
+            "emoji": "🔮",
+            "name": "Tasks",
+            "description": "Use this when changes are made to the tasks manager",
+            "conditional": ["feat","fix","chore","refactor","docs"]
         }
     ]
 }
