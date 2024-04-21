@@ -2,34 +2,6 @@
     "scopes": [
         {
             "conditional": [
-                "feat",
-                "fix",
-                "chore",
-                "refactor",
-                "docs"
-            ],
-            "description": "Use this when changes are related to pre-commit",
-            "emoji": "\ud83d\ude93",
-            "id": "precommit",
-            "name": "Pre-commit"
-        },
-        {
-            "conditional": [
-                "feat",
-                "fix",
-                "chore",
-                "refactor",
-                "docs"
-            ],
-            "description": "Use this when changes are made to the tasks manager",
-            "emoji": "\ud83d\udd2e",
-            "id": "tasks",
-            "name": "Tasks"
-        },
-        {
-            "conditional": [
-                "feat",
-                "fix",
                 "chore",
                 "refactor",
                 "docs"

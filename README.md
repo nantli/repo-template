@@ -1,8 +1,8 @@
-# Repository Template
+# Repository Template for Huatulquirri 🌊
 
 [![Built with Devbox](https://www.jetify.com/img/devbox/shield_galaxy.svg)](https://www.jetify.com/devbox/docs/contributor-quickstart/)
 
-This repository serves as a template for creating new projects here at @nantli. It provides a basic structure and guidelines to help you get started quickly. Feel free to customize it to fit your specific needs.
+This repository serves as a template for creating new projects here at @huatulquirri. It provides a basic structure and guidelines to help you get started quickly. Feel free to customize it to fit your specific needs.
 
 ## Pre-requisites
 
