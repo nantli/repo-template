@@ -1,18 +1,43 @@
 {
     "scopes": [
         {
-            "id": "git",
-            "emoji": "🐙",
-            "name": "Git",
-            "description": "Use this when changes are made to tools sorrounding git",
-            "conditional": ["feat","fix","chore","refactor","docs"]
+            "conditional": [
+                "feat",
+                "fix",
+                "chore",
+                "refactor",
+                "docs"
+            ],
+            "description": "Use this when changes are related to pre-commit",
+            "emoji": "\ud83d\ude93",
+            "id": "precommit",
+            "name": "Pre-commit"
         },
         {
-            "id": "tasks",
-            "emoji": "🔮",
-            "name": "Tasks",
+            "conditional": [
+                "feat",
+                "fix",
+                "chore",
+                "refactor",
+                "docs"
+            ],
             "description": "Use this when changes are made to the tasks manager",
-            "conditional": ["feat","fix","chore","refactor","docs"]
+            "emoji": "\ud83d\udd2e",
+            "id": "tasks",
+            "name": "Tasks"
+        },
+        {
+            "conditional": [
+                "feat",
+                "fix",
+                "chore",
+                "refactor",
+                "docs"
+            ],
+            "description": "Use this when changes are made to the dev environment",
+            "emoji": "\ud83d\udcbb",
+            "id": "devenv",
+            "name": "DevEnv"
         }
     ]
 }

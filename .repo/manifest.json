@@ -1,6 +1,6 @@
 {
-    "orgName":"nantli",
-    "repoName":"repo-template",
+    "license": "UNLICENSED",
+    "orgName": "nantli",
     "repoDescription": "This is a repository template for nantli projects",
-    "license":"UNLICENSED"
+    "repoName": "repo-template"
 }
