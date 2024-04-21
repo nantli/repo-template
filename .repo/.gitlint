@@ -69,7 +69,7 @@ min-length=15
 [title-match-regex]
 # python-style regex that the commit-msg title must match
 # Note that the regex can contradict with other rules if not used correctly
-regex=^\w+(\((🔮|💻|🚓)\))?!?:\s.*
+regex=^\w+(\((.*)\))?!?:\s.*
 
 # [body-max-line-length]
 # line-length=72
