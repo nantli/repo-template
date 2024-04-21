@@ -1,19 +1,20 @@
 # Repository Template
 
+[![Built with Devbox](https://www.jetify.com/img/devbox/shield_galaxy.svg)](https://www.jetify.com/devbox/docs/contributor-quickstart/)
+
 This repository serves as a template for creating new projects here at @nantli. It provides a basic structure and guidelines to help you get started quickly. Feel free to customize it to fit your specific needs.
 
 ## Pre-requisites
 
 - direnv: https://direnv.net/
-- make: https://www.gnu.org/software/make/
-- gum: https://github.com/charmbracelet/gum
+- devbox: https://www.jetify.com/devbox/docs/configuration/
 
 ## Usage
 
 1. Clone this repository using the `git clone` command.
 2. cd into the repository
 3. Run `direnv allow` to allow and load .envrc
-4. Run `make setup_dev` to install and set up the development environment.
+4. Run `devbox shell` to start the development environment
 
 ### Commiting changes
 

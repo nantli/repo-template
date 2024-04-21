@@ -1,6 +1,6 @@
 /bin/
 /.notebook/
-/.direnv/
+/.devbox/
 # used by pre-commit
 .pre-commit-config.yaml
 !.repo/.pre-commit-config.yaml
