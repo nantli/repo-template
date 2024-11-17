@@ -8,16 +8,17 @@
     "packages": [
         "gum@latest",
         "go-task@latest",
-        "go@latest",
-        "python@latest"
+        "python@latest",
+        "go@1.23.1"
     ],
     "shell": {
         "init_hook": [
             "ln -f $PWD/.repo/.pre-commit-config.yaml $PWD/.pre-commit-config.yaml",
             "ln -f $PWD/.repo/.gitlint $PWD/.gitlint",
             ". $VENV_DIR/bin/activate",
+            "pip3 install --upgrade pip",
             "pip3 install -r $PWD/.repo/requirements.txt",
-            "export PS1='\ud83e\ude7b repo-template > '",
+            "export PS1='🩻・repo-template> '",
             "pre-commit install",
             "go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0",
             "alias gc='goodcommit'",
