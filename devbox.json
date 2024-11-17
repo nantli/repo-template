@@ -18,11 +18,12 @@
             ". $VENV_DIR/bin/activate",
             "pip3 install --upgrade pip",
             "pip3 install -r $PWD/.repo/requirements.txt",
-            "export PS1='\ud83d\udcdc\u30fbrepo-template > '",
+            "export PS1='\ud83d\udcbb\u30fbrepo-template > '",
             "pre-commit install",
             "go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0",
             "alias gc='goodcommit'",
             "alias pc='pre-commit run --all-files'",
+            "pre-commit install-hooks",
             "clear"
         ]
     }
