@@ -8,6 +8,14 @@ This repository serves as a template for creating new projects here at @nantli. 
 
 - devbox: https://www.jetify.com/devbox/docs/configuration/
 
+If you don't have `devbox` installed, you can install it by running the following command:
+
+```bash
+curl -sSL https://www.jetify.com/install-devbox.sh | bash
+```
+
+If you use GitHub Codespaces, `devbox` is already installed.
+
 ## Usage
 
 1. Clone this repository using the `git clone` command.
@@ -30,4 +38,4 @@ This repository uses pre-commit hooks to ensure that the code is formatted and l
 
 #### Configuring pre-commit hooks
 
-The pre-commit hooks are configured using the `.pre-commit-config.yaml` file in .repo directory. The idea of this file is to ensure that the code is formatted and linted properly. To learn more about configuring pre-commit hooks, see the [pre-commit documentation](https://pre-commit.com/).
+The pre-commit hooks are configured using the [.pre-commit-config.yaml file](.repo/.pre-commit-config.yaml) file. The idea of this file is to ensure that the code is formatted and linted properly. To learn more about configuring pre-commit hooks, see the [pre-commit documentation](https://pre-commit.com/).

@@ -1,0 +1,5 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "name": "Devbox with devcontainers",
+    "onCreateCommand": "curl -fsSL https://get.jetify.com/devbox | bash -s -- -f && devbox setup nix && devbox install"
+}
